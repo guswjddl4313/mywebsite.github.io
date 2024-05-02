@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CodeCure</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>CodeCure</h1>
+            <h2>사이트</h2>
+        </header>
+        <nav>
+            <ul>
+                <li>목록1</li>
+                <li>목록2</li>
+                <li><a href="./subpage.html">naver</a></li>
+            </ul>
+            <ol>
+                <li>목록1</li>
+                <li>목록2</li>
+            </ol>
+        </nav>
+        <article>
+            <input type="text" id="userinput">
+            <button onclick="display()">push</button>
+            <p id="displayText"></p>
+            <script>
+                function display() {
+                    var inputtext = document.getElementById('userinput').value;
+                    document.getElementById('displayText').innerHTML = inputtext;
+                }
+            </script>
+        </article>
+        <footer>
+        </footer>
+    </body>
+</html>
